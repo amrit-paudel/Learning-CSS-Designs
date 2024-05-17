@@ -1,0 +1,41 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --border:solid blue;
+}
+
+.image-container{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+   /* background-color: rgb(0, 0, 0); */
+    /*opacity: 0.7; */
+
+    /* doing above seems like we are
+    blending the image with the provided color
+    but this is not good method
+    
+    there is a proper css property for 
+    blending the provided image
+    with provided color*/
+    
+    background-color: rgb(94, 23, 112);
+    background-image: url("https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+   
+    background-blend-mode: overlay;
+    /* It blends the background image 
+    and background color */
+    
+    
+    
+}
+
+
+

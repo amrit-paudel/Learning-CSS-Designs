@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(140, 140, 146);
+    margin: 0 30px 0 30px;
+
+    display: flex; align-items: center; justify-content: center;
+}
+
+.image-container{
+    width:60%;
+    margin: 20px 0 0 0 ;
+
+}
+
+.image-container > p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    text-align: justify;
+}
+
+.image{
+    width: 100%;
+
+    /* here the image sizes to 100% of it's container */
+    /* also the image container always resizes to 60% of body */
+
+    /* so on very large screen or in very small screen
+    the image will be too large and too small
+    
+    so we set the max-width and min-width of the image
+    so that image won't be smaller than a limit
+    and won't be larger than a limit */
+
+    max-width: 1500px;
+    min-width: 250px;
+
+}

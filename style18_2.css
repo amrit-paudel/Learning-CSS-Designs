@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --border:solid blue;
+    --bg-color:rgb(176, 198, 202);
+}
+
+body{
+    
+    background-color: var(--bg-color);
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    padding: 8px 10px 8px 10px;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    background-color:rgb(131, 164, 170) ;
+    border-radius: 5px;
+    margin: 10px;
+    border: solid 2px rgb(67, 72, 73);
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Just this property alone
+    puts the signup and login at right and others at left */
+    background-color: rgb(131, 164, 170);
+    height: 80px;
+}
+
+.navbar ul li{
+    margin: 0 10px 0 10px;
+}
+
+
+.navbar .signup-and-login{   /* this one is also important */
+    display: flex;
+    
+}
+
+.navbar .home-about-contact{  /* and this one is also important */
+    display: flex;
+    
+}
+
+
+
+.signup-and-login > li:nth-child(1) > a {
+
+    background-color: rgb(216, 60, 60);
+    border: solid 2px rgb(216, 60, 60);
+}
+
+.signup-and-login > li:nth-child(2) > a {
+    background-color: rgb(74, 73, 172);
+    border: solid 2px rgb(74, 73, 172) ;
+}
+
+ul>li>a:hover  {
+    border: dotted 2px  rgb(60, 72, 75) ; 
+}
+
+.signup-and-login > li >a:hover {
+    border: dotted 2px  rgb(60, 72, 75) ; 
+}
+
+.signup-and-login > li:nth-child(1) a:hover {
+    border: dotted 2px  rgb(64, 78, 82) ; 
+    background-color:rgb(175, 62, 28) ;
+    color: rgb(156, 189, 187);
+}
+
+.signup-and-login > li:nth-child(2) a:hover {
+    border: dotted 2px  rgb(64, 78, 82) ; 
+    background-color:rgb(64, 89, 168) ;
+    color: rgb(156, 189, 187);
+}
+

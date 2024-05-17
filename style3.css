@@ -1,0 +1,107 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 {
+    
+    width: 400px;
+    height: 400px;
+    border: solid blue;
+}
+
+.box2 {
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+
+    border: solid blue;
+    
+}
+
+
+
+.box1{
+
+    background-image: url("https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-lisa-1107717.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    /* In cover */
+    /* Image stretch or compress */
+    /* Original ratio of image is not preserved
+    but image fits perfectly inside our box */
+    
+    /* here image may expand and stretch to fit perfectly 
+    within the box */
+    /* here some parts/details of image may get lost */
+}
+
+
+.box{
+    margin-top: 100px;
+    border: solid blue;
+    width: 500px;
+    height: 500px;
+
+    display: flex; align-items: center; justify-content: center;
+}
+
+
+
+.box2{
+
+    background-image: url("https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-lisa-1107717.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: contain;
+    /*here image also stretch and expand but 
+    every details of image is not lost */
+
+    /* Here image stretch or compress
+    original image ratio is preserved
+    but image may not fit perfectly in box
+     */
+    
+    
+}
+
+.box3{
+    width: 80%;
+    height: 80vh;
+
+    background-image: url("https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-lisa-1107717.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: scroll;
+
+    border: solid blue;
+    margin-top: 40px;
+
+}
+
+/* same as box3, only difference is in background position */
+.box4{
+    width: 80%;
+    height: 80vh;
+
+    background-image: url("https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-lisa-1107717.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-position:right;   /* position of starting of image inside box */
+    /* like background-size:cover; and background-position:center; seems to work perfectly for general work */
+
+    background-size: contain;  /* also see the background position property changing this to cover also */
+    background-attachment: scroll;
+
+    border: solid blue;
+    margin-top: 40px;
+
+}
+
+
+

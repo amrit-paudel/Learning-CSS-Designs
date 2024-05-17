@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500;1,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Ubuntu:ital,wght@1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>a concise css guide</title>
+</head>
+
+<body>
+    <header>
+        <p>
+            The important css properties and tricks
+        </p>
+    </header>
+
+    <div class="css-background properties  ">
+        <div class="code-and-description">
+
+            <div class="css-code">
+
+                <h1 class="token selector" >CSS background properties</h1>
+
+
+              <pre class="language-css">
+                 <code class="language-css">
+
+                    <span class="token selector"><</span><span class="token selector">body</span><span class="token selector">></span>
+                      <span class="token selector"><</span><span class="token selector">div</span><span class="token punctuation"> class="box"</span> <span class="token selector">></span>
+
+                      <span class="token selector"><</span><span class="token selector">/</span><span class="token selector">div></</span>
+                    <span class="token selector"><</span><span class="token selector">body</span><span class="token selector">/></span>
+
+                    <span class="token selector">.box</span> <span class="token punctuation">{</span>
+                       <span class="token property">background-image</span><span class="token punctuation">:</span> url()<span class="token punctuation">;</span>
+                       <span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat<span class="token punctuation">;</span>
+                       <span class="token property">background-attachment</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+                       <span class="token property">background-position</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+                       <span class="token property">background-size</span><span class="token punctuation">:</span> contain<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+
+                 </code>
+             </pre>
+            </div>
+
+            <p class="description">
+                The first image is when <span class="token selector" style="background-color: #272822; padding: 2.8px; border-radius: 4px; " ><span class="token property">background-size</span><span class="token punctuation">:</span> contain<span class="token punctuation">;</span></span> and 
+                the second image is when <span class="token selector" style="background-color: #272822; padding: 2.8px; border-radius: 4px; " ><span class="token property">background-size</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span></span> . In contain
+                the image tries to contain within box.
+                It means if the box is way too big than image than image won't stretch to fill whole box.
+                But if the box size is smaller than image size than image will try to contain within box no matter what
+                Whereas in cover the image tries to fill the whole box, here image may stretch or expand.
+            </p>
+
+        </div>
+
+        <div class="image-description">
+
+            <img class="img1" src="css-background-contain.jpg" alt="css background properties visual description">
+            <img class="img2" src="css-background-cover.jpg" alt="css background properties visual description">
+           
+
+        </div>
+
+    </div>
+
+    <div class="css-position properties">
+        <div class="code-and-description">
+
+            <div class="css-code">
+
+                <h1 class="token selector" >CSS position properties</h1>
+
+
+              <pre class="language-css">
+                 <code class="language-css">
+
+                    <span class="token selector">.any class name</span> <span class="token punctuation">{</span>
+                      <span class="token property">position</span><span class="token punctuation">:</span> static<span class="token punctuation">;</span>
+                       <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+                       <span class="token property">top</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+
+                 </code>
+             </pre>
+            </div>
+
+            <p class="description">
+                The first one <span class="token selector" style="background-color: #272822; padding: 2.8px; border-radius: 4px; " ><span class="token property">position</span><span class="token punctuation">:</span> static<span class="token punctuation">;</span></span>
+                is the normal default property of css boxes. <br>
+                Whereas in the second one the css box moves 100px below from top
+                relative to it's normal position
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="css-position properties">
+        <div class="code-and-description">
+
+            <div class="css-code">
+
+
+              <pre class="language-css">
+                 <code class="language-css">
+
+                    <span class="token selector">.any class name</span> <span class="token punctuation">{</span>
+                       <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+                       <span class="token property">top</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+
+                 </code>
+             </pre>
+            </div>
+
+            <p class="description">
+                The first one <span class="token selector" style="background-color: #272822; padding: 2.8px; border-radius: 4px; " ><span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span></span>
+                 here the css box moves 100 px below from the top with relative to viewport. <br>
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="css-position properties">
+        <div class="code-and-description">
+
+            <div class="css-code">
+
+
+              <pre class="language-css">
+                 <code class="language-css">
+
+                    <span class="token selector">.any class name</span> <span class="token punctuation">{</span>
+                       <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+                       <span class="token property">top</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+
+                 </code>
+             </pre>
+            </div>
+
+            <p class="description">
+                The first one <span class="token selector" style="background-color: #272822; padding: 2.8px; border-radius: 4px; " ><span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span></span>
+                 here the css box moves 100 px below from the top with relative to it's nearest ancestors.<br>
+                 But that ancestors must be positioned non statically. <br>
+                 Meaning that ancestors cannot have  <span class="token property">position</span><span class="token punctuation">:</span> static<span class="token punctuation">;</span> <br>
+                 It must have other position properties like  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span> <br> <br>
+                 Otherwise on doing  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span> box will be
+                 positioned with respect to document body 
+
+
+                 <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span> vs
+                 <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+
+                 In  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span> box 
+                 remains fixed and page scrolls <br>
+                 Whereas in  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+                 box attached to page and scrolls with page
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="css-position properties  ">
+        <div class="code-and-description">
+
+            <div class="css-code">
+
+                <h1 class="token selector" >See an example</h1>
+
+
+              <pre class="language-css">
+                 <code class="language-css">
+
+                    <span class="token selector"><</span><span class="token selector">body</span><span class="token selector">></span>
+                      <span class="token selector"><</span><span class="token selector">div</span><span class="token punctuation"> class="box1"</span> <span class="token selector">></span>
+                      <span class="token selector"><</span> <span class="token selector">p></span>
+                      This is a box 1 
+                      <span class="token selector"><</span><span class="token selector">/</span><span class="token selector">p></</span>
+
+                      <span class="token selector"><</span><span class="token selector">div</span><span class="token punctuation"> class="box2"</span> <span class="token selector">></span>
+                      <span class="token selector"><</span> <span class="token selector">p></span> 
+                      This is a box 2
+                      <span class="token selector"><</span><span class="token selector">/</span><span class="token selector">p></</span>
+                      <span class="token selector"><</span><span class="token selector">/</span><span class="token selector">div></</span>
+
+                      <span class="token selector"><</span><span class="token selector">/</span><span class="token selector">div></</span>
+                    <span class="token selector"><</span><span class="token selector">body</span><span class="token selector">/></span>
+
+                    <span class="token selector">.box1</span> <span class="token punctuation">{</span>
+                       <span class="token property">background-color</span><span class="token punctuation">:</span>chartreuse<span class="token punctuation">;</span>
+                       <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+                       <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+                       <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+
+                    <span class="token selector">.box2</span> <span class="token punctuation">{</span>
+                        <span class="token property">background-color</span><span class="token punctuation">:</span>rgb(31,34,196)<span class="token punctuation">;</span>
+                        <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+                        <span class="token property">top</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+                        <span class="token property">right</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+                        <span class="token property">bottom</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+                        <span class="token property">left</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+                        <span class="token property">width</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
+                        <span class="token property">height</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
+                        <span class="token property">margin-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+                     <span class="token punctuation">}</span>
+
+
+                 </code>
+             </pre>
+            </div>
+
+            <p class="description">
+                The box 2 is positioned relative to the box 1
+            </p>
+
+        </div>
+
+        <div class="image-description">
+
+            <img class="img1" src="css-position.jpg" alt="css background properties visual description">
+            <img class="img2" src="css-position.jpg" alt="css background properties visual description">
+           
+
+        </div>
+
+    </div>
+
+
+
+    
+
+</div>
+
+
+
+
+</body>
+
+</html>

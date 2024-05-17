@@ -1,0 +1,39 @@
+
+
+body{
+    background-color: cadetblue;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    border: solid blue;
+}
+
+.navbar{
+    border:solid blue;
+    margin:10px 10px;
+    
+
+}
+
+.main-and-aside{
+    border: solid blue;
+    padding: 0 10px 0 10px;
+}
+
+main{
+    border: solid blue;
+}
+
+aside{
+    border: solid blue;
+}
+
+footer{
+    border: solid blue;
+}

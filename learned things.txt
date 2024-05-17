@@ -1,0 +1,28 @@
+<header>
+it is a html5 tag. Most be wondering when we have h1, h2, h3...
+already than why we need another <header> tag. Well most times
+we have to write more than just <h1>******** </h1> 
+
+<header>
+  <h1> </h1>
+  <p> </p>
+</header>
+
+
+In css proper usuage of
+coloring
+animation
+gradient
+photos
+
+makes site 90% better
+
+Revise 
+1) flex box
+2) css grid
+3) media queries
+
+
+
+
+

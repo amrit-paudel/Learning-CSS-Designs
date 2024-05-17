@@ -1,0 +1,34 @@
+
+
+/* difference between the width:auto; and width:100%; */
+
+
+body{
+    background-color: rgb(155, 151, 146);
+}
+
+
+.navbar{
+    background-color: rgb(119, 117, 114);
+    border: solid blue;
+   /* width: auto; */
+    width:100%; 
+
+    padding-right: 200px;
+}
+
+/* auto gardaa width provided margin raw padding 
+sanga auto adjust garnae garrie linxaa
+
+but 100% gardaa width parent container ko 100% nai hunxaa
+it doesnot care about margin and padding
+it exclude margin 
+it includes padding within itself
+but this is true for block level element 
+things might change for flex level element.  Meaning when we do display:flex;
+
+
+In above width takes 100vw and then margin occurs and 
+there even occur one slide bar at bottom
+
+*/

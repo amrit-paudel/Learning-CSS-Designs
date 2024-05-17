@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --border: solid blue;
+    --bg-color:#53b8bb;
+    --button-color:#f3f2c9;
+    --small-container-bg-color:#055052;
+
+}
+
+body{
+    background-color: var(--bg-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.button{
+    border: solid var(--button-color) 3px;
+    border-radius: 4px;
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+}
+
+.button span{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    padding: 2px;
+}
+
+.button:hover{
+    border: dotted var(--small-container-bg-color) 3px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

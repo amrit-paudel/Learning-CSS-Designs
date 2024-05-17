@@ -1,0 +1,99 @@
+
+/*
+Why css variables are super useful 
+
+let say we build a site of multiple pages
+and there we apply almost similar 3 or 4 different colors
+for all the pages
+
+and we can actually keep those colors inside variables
+doing so if we changes colors in future
+we don't need to check in for all the css selectors
+the new colors gets applied effectively
+
+NOT just with colors we can do this 
+with every css properties
+
+which is really cool
+
+*/
+
+ /* 
+ we put all our variables inside root element
+  
+ root: {  }
+
+ think of it as a html element
+ defining them inside root: 
+ they becomes global prperties
+ so we can use them throughtout css
+
+ */
+
+ /* 
+ CSS variables keeps all the essential things 
+ at one place
+ CSS variables gives us the control
+ of the whole entire site
+
+ */
+
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+ :root{
+     --bg-color:#79819e;
+     --section-bg-color:#47585e;
+     --text-color:#fff;
+     --section-border-radius:50px;
+
+ }
+
+ body{
+     margin: 0 80px 0 80px;
+     background-color: var(--bg-color);
+ }   
+  
+ .first-section{
+     margin-top: 100px;
+ }
+ .first-section,.second-section,.third-section{
+     
+     padding: 10px;
+     background-color: var(--section-bg-color);
+     box-shadow: 1px 1px 10px #47585e;
+     border: solid var(--section-bg-color);
+     border-radius: var(--section-border-radius);
+     margin-bottom: 50px;
+ }
+
+ h1,h2,p{
+     color: var(--text-color);
+     font-family: sans-serif;
+     padding: 3.5px;
+ }
+
+ h1,h2{
+     text-transform: capitalize;
+     text-align: center;
+
+     margin-bottom: 8px;
+ }
+
+ p{
+     font-size: 1.06rem;
+     font-weight: 400;
+     padding: 10px 20px;
+     line-height: 1.42;
+
+     /* It just violates the purpose of using
+     css variables, but just to know we
+     can do this also */
+
+   /* --text-color:rgb(143, 104, 104); */
+
+
+ } 
+

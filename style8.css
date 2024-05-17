@@ -1,0 +1,66 @@
+
+body{
+    background-color: rgb(184, 182, 179);
+}
+
+.box1{
+    margin: 80px 0 80px 0;
+    border: solid blue;
+    background-color: rgb(187, 113, 40);
+
+    /* height property */
+    height: 200px;
+}
+
+
+
+
+.box2{
+    margin: 80px 0 80px 0;
+    border: solid blue;
+    background-color: rgb(121, 107, 107);
+
+    /* height property */
+    height: 200px;
+}
+
+.inside-box1 , .inside-box2{
+    border: solid black;
+    
+    /* meaning of height in percentage */
+    height: 80%;
+}
+
+/* So height 100% means it takes 100% height of it's parent container */
+
+
+
+.box3{
+    border: solid blue;
+    background-color: rgb(83, 75, 75);
+
+    /* height property */
+    height: 300px;
+}
+
+.inside-box3{
+    border: solid black;
+    height: auto;   
+}
+
+/* unlike above when we do height auto the height of box 
+   becomes just enough to fit the content */
+
+/* previously width auto was just to fit within 
+  the width size parent box */
+
+/* but while working with images we may want to work in percentage
+not in auto for both width and heights */
+
+/* this is also true for display:block; meaning for block items
+when we do display:flex; or display:grid;
+they are no longer block items thry are flex or grid items
+so it may not work */
+
+
+

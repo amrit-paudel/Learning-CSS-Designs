@@ -1,0 +1,32 @@
+
+
+body{
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+}
+
+p{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.box1{
+    background-color: chartreuse;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.box2{
+    background-color: rgb(31, 34, 196);
+    position: absolute; /* yesko ancestor ko position other than static xaa
+    so it will be positioned w.r.t box 1 */
+    top: 50px; bottom: 50px; right: 50px; left:50px;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+

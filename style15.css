@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(124, 124, 155) ;
+   
+}
+
+.box1 , .box2{
+    box-shadow: 0px 0px 100px rgb(182, 192, 206);
+}
+
+
+.box1{
+    
+    margin: 30px 100px;
+    width: 70vw;
+    height: 50vh;
+
+    background-image: url("https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: no-repeat;
+
+    /* Our topic */
+    background-size: 110%;
+    /* 
+    It means that the image width can be max
+    ( 110% * container's width ) 
+
+    and background-size:cover; 
+    it just seems like 
+    background-size:100%;
+
+    also when we write background-size:cover;
+    it actually means
+
+    background-size:cover 100%;
+    and
+    background-size:100%;
+    means
+    background-size:100% 100%;
+
+    meaning 
+    along both x-axis and y-axis
+
+
+    */
+
+    
+}
+.box2{
+   
+    margin: 30px 100px;
+    width: 70vw;
+    height: 50vh;
+
+    background-image: url("https://images.pexels.com/photos/2082949/pexels-photo-2082949.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: no-repeat;
+    
+    /* background-position:
+    left : Image position itself at left first
+    right: .. ... ... ... ... right first
+    center: .. ... .. .. ...  center
+
+    by default it is left
+
+    when we do 
+
+    background-position:left or right or center;
+    background-size:cover;
+
+    image first position itself at center 
+    and then it covers the entire container
+
+    */
+
+}
+

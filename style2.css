@@ -1,0 +1,47 @@
+
+.box1 p , .box2  p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.box1{
+    width: 600px;  /* here the wisth of box 1 is double as the 
+    width of the box 2, if that doesnot happens than box 2 goes outside 
+    the box 1 while translateX() happens */
+    height: 500px;
+    background-color: rgb(53, 40, 40);
+    
+}
+
+.box2{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+
+    transition: transform 0.8s ease-in-out 0.1s;
+    /* hamlae transition property kun css property maa apply garna khojaeko ho */
+    /* here we used it in transform */
+    /* but we can use it in every css properties */
+
+}
+
+.box1:hover .box2 {  /* read as box 1 lai hover garae paxi box 2 maa apply hunae css properties */
+   /* transform:translateX(100%); */
+   /* it means trnslate box 2 100% towards X axis
+   if negative values than along -ve x-axis  */
+
+    transform: translateX(-200%); 
+
+    /* closly see difference between these two properties
+    /* understand how translatex() property works */
+
+
+    /* box 2 ko translateX() lai transition garnaa lako,
+    so put that transition property in the .box2 not in the same where
+    transform property is defined  */
+}
+
+
+

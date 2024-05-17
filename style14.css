@@ -1,0 +1,107 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --border:solid blue;
+    --ff:sans-serif;
+    --txt-color:#fff;
+
+    --bg-gradient:linear-gradient( 45deg,
+        #3276b1,
+        #4fb2d4,
+        #a2deed,
+        #a7d694,
+        #ddeb9d
+
+    );
+}
+
+.bg-image-animation{
+    border: solid blue;
+    width: 100%;
+    height: 50vh;
+    border-bottom: solid blue 5px;
+
+    background-image: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?cs=srgb&dl=pexels-roberto-nickson-2559941.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+    animation: bg-image-animation ease 10s infinite alternate;
+    
+
+}
+
+@keyframes bg-image-animation {
+    0%{background-position: left; /* transform: scale(1); */ }
+    50%{background-position: center;}
+    100%{background-position: right; /* transform: scale(1.5); */ }
+}
+
+/* 
+Actually in reality we many never do above animation
+but
+this was mean to show how powerful
+alternate is 
+infinite: meaning animation will occur forever
+alternate: well just comment alternate above and see
+animation if first played forward
+than backward
+
+if not mentioned altrnate
+than once animation finished playing from forward
+than it suddenly / unsmoothly
+again begin from forward which is not nice
+
+
+*/
+
+h1{
+    
+    font-family: var(--ff);
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 20vh;
+    color: var(--txt-color);
+    text-shadow: 0 0 100px rgb(65, 59, 59);
+}
+
+
+
+
+
+
+.bg-linear-gradient-animation{
+    
+    width: 100%;
+    height: 50vh;
+    border: solid blue;
+    background-image:  var(--bg-gradient);
+    animation: bg-lg-animation ease  1s infinite alternate ;
+    
+    background-size:150%;
+}
+
+@keyframes bg-lg-animation {
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
+
+/*  
+the importance of infinite and alternate is
+above
+
+but here if we hadnot used background-size:150% or 200% 
+basically more than 100% 
+than we never could have achieved this 
+animation in linear gradient
+
+background size defines the size of our background 
+placed image, or linear gradient
+*/
+
+
+

@@ -1,0 +1,41 @@
+
+
+body{
+    border: solid blue;
+
+    background-color: rgb(140, 155, 153);
+
+}
+
+.heading{
+    font-size: 3rem;
+    border: solid blue;
+    padding: 5px;
+    
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif  ; 
+    text-transform: capitalize;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.random-text{
+    color: rgb(77, 59, 59);
+    border: solid blue;
+    padding: 5px;
+
+    text-align: left;
+    font-size: 1.3rem;
+
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif  ; 
+    /* it is picked from a site called
+       cssfontstack.com it is basically a font stack
+       when one doesnot gets loaded the other ones gets 
+    loaded to a system */
+
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+    
+}
